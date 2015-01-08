@@ -38,7 +38,7 @@ int main (int argc, char** argv) {
     cout<<total_peas;
     cout<<" peas in all the pods."<<endl;
     
-    //Exit stage right
+    
     
     //a) Having a space between the < and iostream caused the build to fail.
     //b) Omitting one of the > symbols caused the build to fail.
@@ -49,6 +49,9 @@ int main (int argc, char** argv) {
     //f) Misspelling cout and cin caused the build to fail. Omitting one or
     //   both of the << in the cout statement caused the build to fail. Leaving
     //   off the ending curly brace caused the build to fail.
+    
+    //Exit stage right!
+    
     return 0;
 }
 
