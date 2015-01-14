@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Savtich_9thEd_Chap2_PracProg3
+PROJECTNAME=BranchingMonthlyPaymentCalculater
 
 # Active Configuration
 DEFAULTCONF=Debug
