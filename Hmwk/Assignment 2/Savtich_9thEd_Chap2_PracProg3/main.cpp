@@ -13,17 +13,17 @@ using namespace std;
 
 //Global Constants
 const int CNVHRMN=60;//conversion from hours to minutes
-const int CNVMNSC=60;//conversion fromMinutes to seconds
+const int CNVMNSC=60;//conversion from minutes to seconds
 //Function Prototypes
 
 //Execution begins here!
 int main(int argc, char** argv) {
-    
-    float mph;
-    float hpm;
-    float fmpm;
-    float impm;
-    float fmspm;
+    //Declare Variables
+    float mph;  //miles per hour
+    float hpm;  //Hours per mile
+    float fmpm; //float minutes per mile
+    int impm;  // integer minutes per mile
+    float fmspm;//float of seconds in minutes
     
     cout<<"This program converts your speed in miles per hour "<<endl;
     cout<<"(mph) displayed in your treadmill into your pace."<<endl;
@@ -32,11 +32,13 @@ int main(int argc, char** argv) {
     cin>>mph;
     hpm=1/mph;
     fmpm=hpm*CNVHRMN;
-    impm=static_cast<int>
-    hpm=(60/mph);
+    impm=fmpm;
+    cout.setf(ios::fixed);
+    cout.precision(1);
+    fmspm=(fmpm-impm)*CNVMNSC;
     cout<<"If your mph is "<<mph;
-    cout<<" than you will complete a mile in "<<hpm;
-    cout<<" minutes."<<endl;
+    cout<<" than you will complete a mile in "<<impm;
+    cout<<" minutes and "<<fmspm<<" seconds"<<endl;
     
     return 0;
 }
