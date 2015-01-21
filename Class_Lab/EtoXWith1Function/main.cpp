@@ -53,7 +53,7 @@ int nFactrl(int n){
     }
         return factorial;
     }else{
-        return 1;
+        return -1;
     }
         
 }
